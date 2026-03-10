@@ -3,43 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="html5reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-  <a href = "#main-content" class="skip-link">Skip to Main Content</a>
+        <a href="#main-content" class="skip-link">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "resume.html">Resumes</a></li>
-                <li><a href = "networking.html">Networking & Connections</a></li>
-                <li><a href = "portfolio.html">Portfolio</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resumes</a></li>
+                <li><a href="networking.html">Networking</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
             </ul>
         </nav>
         <h1>Professional Portfolio</h1>
-
     </header>
+
     <main id="main-content">
         <section>
-        <h2>Showcasing Innovation and Impact</h2>
-        <p>A portfolio is a vital window into your ability to solve complex information challenges. At UMSI, our projects span from user research to data analysis. This section presents the core project outcomes I have achieved through interdisciplinary collaboration and technical expertise.</p>
-        <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A UMSI backpack resting on a bench on the University of Michigan campus during fall.">
-    </section>
+            <h2>Showcasing Innovation and Impact</h2>
+            <p>A portfolio is a vital window into your ability to solve complex information challenges. At UMSI, our projects span from user research to data analysis. This section presents the core project outcomes you can achieve through interdisciplinary collaboration and technical expertise.</p>
+            <p>Whether you are pursuing UX design, data science, information analysis, or digital product management, a strong portfolio demonstrates your problem-solving skills, creativity, and ability to deliver impactful results.</p>
+            <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A UMSI backpack resting on a bench on the University of Michigan campus during fall.">
+        </section>
 
-    <section>
-        <h2>Featured Project: UX Design Research</h2>
-        <p>In a recent project, I conducted a comprehensive user experience evaluation of a campus resource access system. Through qualitative interviews and prototype testing, I proposed a series of design solutions aimed at optimizing student interaction flows. These practices not only sharpened my technical skills but also deepened my understanding of user-centered design principles.</p>
-        <img src="images/UMSI_mobileapp_mockup.jpg" alt="A screenshot showing a wireframe design for a mobile application project.">
-    </section>
-    <!-- Content taken & modified from Gemini with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the portfolio page": and then crate two sections text related to portfolio importance and mockup examples"
-        Gemini. (2025).( Gemini 3 Pro version) [Large language model]. -->
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/UMSI_mobileapp_mockup.jpg" alt="A wireframe design showing a mobile application prototype for a campus resource system.">
+                    <div class="project-info">
+                        <h3>UX Design Research</h3>
+                        <p>User experience evaluation of a campus resource access system with qualitative interviews and prototype testing.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/UMSI_networking_image.jpg" alt="Students collaborating on a data analysis project in a team setting.">
+                    <div class="project-info">
+                        <h3>Data Analysis Dashboard</h3>
+                        <p>Interactive visualization of student engagement metrics using Python and Tableau for the UMSI community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Building Your Portfolio</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>Start with Your Best Work</h3>
+                    <p>Quality over quantity. Select 3-5 projects that best demonstrate your skills and the type of work you want to pursue.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Tell the Full Story</h3>
+                    <p>For each project, explain the problem, your process, your contributions, and the outcome or impact.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Show Your Process</h3>
+                    <p>Include sketches, wireframes, code snippets, or research artifacts to demonstrate how you think and work through challenges.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Keep It Updated</h3>
+                    <p>Add new projects after each semester. Remove older work that no longer represents your current skill level.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Portfolio Platforms and Tools</h2>
+            <p>Choosing the right platform to host your portfolio can make a big difference in how your work is perceived. Here are some popular options used by UMSI students:</p>
+            <ul class="resource-list">
+                <li>
+                    <a href="https://github.com" target="_blank">GitHub Pages</a>
+                    <br><span>Free hosting for developers. Great for showcasing code projects, data analysis, and technical portfolios.</span>
+                </li>
+                <li>
+                    <a href="https://www.behance.net" target="_blank">Behance</a>
+                    <br><span>A visual platform ideal for UX/UI design portfolios. Easy to create case studies with rich media.</span>
+                </li>
+                <li>
+                    <a href="https://www.figma.com" target="_blank">Figma</a>
+                    <br><span>Collaborative design tool frequently used in UMSI courses. Share prototypes and design systems directly.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Portfolio FAQ</h2>
+            <ul class="faq-list">
+                <li>
+                    <strong>Do I need a portfolio if I am not a designer?</strong>
+                    Yes! Portfolios are valuable for all information professionals. Data analysts can showcase dashboards, developers can show projects, and researchers can present findings.
+                </li>
+                <li>
+                    <strong>How many projects should I include?</strong>
+                    Aim for 3-5 well-documented projects. Each should clearly demonstrate your skills and thought process.
+                </li>
+                <li>
+                    <strong>Can I use class projects in my portfolio?</strong>
+                    Absolutely. UMSI coursework is highly relevant. Just make sure to describe your individual contributions if it was a group project.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Need Portfolio Guidance?</h2>
+            <div class="cta-box">
+                <p>Schedule a session with a CDO Career Coach to get feedback on your portfolio strategy and content.</p>
+                <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">Talk to a Career Coach</a>
+            </div>
+        </section>
+
+        <!-- Content taken & modified from Gemini with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the portfolio page": and then create two sections text related to portfolio importance and mockup examples
+        Gemini. (2025). (Gemini 3 Pro version) [Large language model]. -->
+
     </main>
-    <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-        </footer>
-    
-</body>
 
+    <footer>
+        <p>University of Michigan School of Information</p>
+        <p><a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
+        <div class="footer-links">
+            <a href="https://si-umich.12twenty.com/Login" target="_blank">Career Link Portal</a>
+            <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank">Visit UMSI</a>
+        </div>
+    </footer>
+
+</body>
 </html>
