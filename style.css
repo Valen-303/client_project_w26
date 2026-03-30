@@ -246,22 +246,51 @@ iframe {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* --- FAQ List --- */
-.faq-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.faq-list li {
-  margin-bottom: 1rem;
-  padding: 1rem;
+/* --- FAQ Accordion --- */
+.faq-accordion details {
+  margin-bottom: 0.5rem;
   background-color: #F7F7F7;
+  border-left: 4px solid #FFCB05;
 }
 
-.faq-list li strong {
-  display: block;
+.faq-accordion summary {
+  padding: 1rem;
+  font-weight: bold;
   color: #00274C;
-  margin-bottom: 0.25rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-accordion summary::before {
+  content: "+ ";
+  font-weight: bold;
+  color: #2F65A7;
+}
+
+.faq-accordion details[open] summary::before {
+  content: "- ";
+}
+
+.faq-accordion summary:focus {
+  outline: 3px solid #FFCB05;
+  outline-offset: 2px;
+}
+
+.faq-accordion summary:hover {
+  background-color: #E8E8E8;
+}
+
+.faq-accordion details p {
+  padding: 0 1rem 1rem 1rem;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: #333333;
 }
 
 /* --- Steps List (Resume page) --- */
@@ -440,6 +469,63 @@ iframe {
   margin-bottom: 0;
 }
 
+/* --- Back to Top Button --- */
+.back-to-top {
+  display: block;
+  text-align: center;
+  background-color: #00274C;
+  color: #FFFFFF;
+  padding: 0.75rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  border: 2px solid #00274C;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.back-to-top:hover {
+  background-color: #FFCB05;
+  color: #00274C;
+  border-color: #FFCB05;
+}
+
+.back-to-top:focus {
+  outline: 3px solid #FFCB05;
+  outline-offset: 2px;
+}
+
+/* --- 404 Page --- */
+.error-page {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.error-page h2 {
+  font-size: 4rem;
+  color: #FFCB05;
+  margin-bottom: 0.5rem;
+  padding-top: 0;
+}
+
+.error-page h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.error-page p {
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  color: #6B6B6B;
+}
+
+.error-page a.quick-link-btn {
+  display: inline-block;
+  width: auto;
+  padding: 0.75rem 2rem;
+}
+
 /* --- Footer --- */
 footer {
   background-color: #001B33;
@@ -470,6 +556,12 @@ footer a:focus {
   outline-offset: 2px;
 }
 
+footer .footer-contact {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 footer .footer-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -486,4 +578,156 @@ footer .footer-links a {
 /* --- Bold text in content --- */
 main strong {
   color: #00274C;
+}
+
+/* ============================================
+   TABLET / DESKTOP VIEW
+   min-width: 768px
+   ============================================ */
+@media (min-width: 768px) {
+
+  /* --- Header: logo and title side by side --- */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    text-align: left;
+  }
+
+  header img {
+    width: 80px;
+    margin: 0 1.5rem 0 0;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+    flex: 1;
+  }
+
+  /* --- Nav: horizontal single row --- */
+  nav {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+  }
+
+  nav ul li a {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* --- Main: wider padding --- */
+  main {
+    padding: 2rem 3rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* --- Larger headings --- */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  /* --- Images: constrain width on large screens --- */
+  main section img {
+    max-width: 600px;
+    margin: 1.5rem auto;
+  }
+
+  /* --- Iframe: taller on desktop --- */
+  iframe {
+    height: 400px;
+    max-width: 720px;
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  /* --- Card Grid: 4 columns on desktop --- */
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* --- Quick Links: 4 columns --- */
+  .quick-links {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* --- Tips Grid: more gap --- */
+  .tips-grid {
+    gap: 1.5rem;
+  }
+
+  /* --- Resume Resources: 4 columns --- */
+  .resume-resources-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* --- FAQ Accordion: 2 columns --- */
+  .faq-accordion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  /* --- Resource List: 2 columns --- */
+  .resource-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  /* --- CTA Box: wider padding --- */
+  .cta-box {
+    padding: 2rem 3rem;
+  }
+
+  /* --- Back to Top: fixed position on desktop --- */
+  .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: auto;
+    padding: 0.6rem 1.2rem;
+    margin-top: 0;
+    font-size: 0.85rem;
+    z-index: 500;
+  }
+
+  /* --- Footer: horizontal layout --- */
+  footer {
+    padding: 1.5rem 3rem;
+    text-align: left;
+  }
+
+  footer .footer-links {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  /* --- 404 Page: larger on desktop --- */
+  .error-page {
+    padding: 5rem 3rem;
+  }
+
+  .error-page h2 {
+    font-size: 6rem;
+  }
+
+  .error-page h3 {
+    font-size: 2rem;
+  }
 }

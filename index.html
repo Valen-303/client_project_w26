@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="html5reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
 
     <header>
         <a href="#main-content" class="skip-link">Skip to Main Content</a>
@@ -98,19 +98,28 @@
             </div>
         </section>
 
+        <a href="#top" class="back-to-top">&#8679; Back to Top</a>
+
         <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements
         UMGPT. (2025). UMGPT (GPT-4.1 August 25th version) [Large language model]. -->
 
     </main>
 
     <footer>
-        <p>University of Michigan School of Information</p>
+        <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
         <p><a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
+        <p class="footer-contact">105 S State St, Ann Arbor, MI 48109 | <a href="mailto:umsi.career@umich.edu">umsi.career@umich.edu</a></p>
         <div class="footer-links">
-            <a href="https://si-umich.12twenty.com/Login" target="_blank">Career Link Portal</a>
+            <a href="https://si-umich.12twenty.com/Login" target="_blank">Career Link</a>
             <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank">Visit UMSI</a>
+            <a href="https://www.linkedin.com/school/university-of-michigan-school-of-information/" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/umaborsi" target="_blank">X (Twitter)</a>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>

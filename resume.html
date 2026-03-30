@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="html5reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
 
     <header>
         <a href="#main-content" class="skip-link">Skip to Main Content</a>
@@ -26,16 +26,10 @@
     <main id="main-content">
         <section>
             <h2>Craft a Resume that Tells Your Story</h2>
-            <p>
-                Your resume is often your first impression—an opportunity to highlight your unique strengths, skills, and experiences to potential employers. Whether you are starting from scratch or looking to polish an existing resume, these resources are here to help you every step of the way.
-            </p>
-            <p>
-                UMSI students are in high demand, and a clear, well-organized resume will help you stand out among applicants. On this page, you will find practical tips, templates, and guides—all tailored to the needs of School of Information students and aligned with employer expectations.
-            </p>
+            <p>Your resume is often your first impression—an opportunity to highlight your unique strengths, skills, and experiences to potential employers. Whether you are starting from scratch or looking to polish an existing resume, these resources are here to help you every step of the way.</p>
+            <p>UMSI students are in high demand, and a clear, well-organized resume will help you stand out among applicants. On this page, you will find practical tips, templates, and guides—all tailored to the needs of School of Information students and aligned with employer expectations.</p>
             <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A UMSI student with a backpack walking across campus in autumn, heading to a career development event.">
-            <p>
-                Need feedback? You can always <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a CDO Career Coach</a> to review your materials.
-            </p>
+            <p>Need feedback? You can always <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a CDO Career Coach</a> to review your materials.</p>
         </section>
 
         <section>
@@ -96,24 +90,24 @@
 
         <section>
             <h2>Resume FAQ</h2>
-            <ul class="faq-list">
-                <li>
-                    <strong>How long should my resume be?</strong>
-                    For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.
-                </li>
-                <li>
-                    <strong>Do I need a different resume for each application?</strong>
-                    It is wise to tailor your resume to the requirements and keywords of each opportunity.
-                </li>
-                <li>
-                    <strong>Is it okay to include coursework or student projects?</strong>
-                    Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and impact.
-                </li>
-                <li>
-                    <strong>How often should I update my resume?</strong>
-                    Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.
-                </li>
-            </ul>
+            <div class="faq-accordion">
+                <details>
+                    <summary>How long should my resume be?</summary>
+                    <p>For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.</p>
+                </details>
+                <details>
+                    <summary>Do I need a different resume for each application?</summary>
+                    <p>It is wise to tailor your resume to the requirements and keywords of each opportunity.</p>
+                </details>
+                <details>
+                    <summary>Is it okay to include coursework or student projects?</summary>
+                    <p>Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and impact.</p>
+                </details>
+                <details>
+                    <summary>How often should I update my resume?</summary>
+                    <p>Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.</p>
+                </details>
+            </div>
         </section>
 
         <section>
@@ -124,19 +118,28 @@
             </div>
         </section>
 
-        <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a resume page" - this was after I had asked for content for the home page.
+        <a href="#top" class="back-to-top">&#8679; Back to Top</a>
+
+        <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a resume page"
         UMGPT. (2025). UMGPT (GPT-4.1 August 25th version) [Large language model]. -->
 
     </main>
 
     <footer>
-        <p>University of Michigan School of Information</p>
+        <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
         <p><a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
+        <p class="footer-contact">105 S State St, Ann Arbor, MI 48109 | <a href="mailto:umsi.career@umich.edu">umsi.career@umich.edu</a></p>
         <div class="footer-links">
-            <a href="https://si-umich.12twenty.com/Login" target="_blank">Career Link Portal</a>
+            <a href="https://si-umich.12twenty.com/Login" target="_blank">Career Link</a>
             <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank">Visit UMSI</a>
+            <a href="https://www.linkedin.com/school/university-of-michigan-school-of-information/" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/umaborsi" target="_blank">X (Twitter)</a>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>

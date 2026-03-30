@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="html5reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <header>
+        <a href="#main-content" class="skip-link">Skip to Main Content</a>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resumes</a></li>
+                <li><a href="networking.html">Networking</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+        <h1>Page Not Found</h1>
+    </header>
+
+    <main id="main-content">
+        <div class="error-page">
+            <h2>404</h2>
+            <h3>Oops! This page doesn't exist.</h3>
+            <p>The page you are looking for may have been moved, deleted, or never existed. But don't worry — there are plenty of career resources waiting for you.</p>
+            <div class="quick-links">
+                <a href="index.html" class="quick-link-btn">Go Home</a>
+                <a href="resume.html" class="quick-link-btn">Resumes</a>
+                <a href="networking.html" class="quick-link-btn">Networking</a>
+                <a href="portfolio.html" class="quick-link-btn">Portfolio</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
+        <p><a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
+        <p class="footer-contact">105 S State St, Ann Arbor, MI 48109 | <a href="mailto:umsi.career@umich.edu">umsi.career@umich.edu</a></p>
+        <div class="footer-links">
+            <a href="https://si-umich.12twenty.com/Login" target="_blank">Career Link</a>
+            <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank">Visit UMSI</a>
+            <a href="https://www.linkedin.com/school/university-of-michigan-school-of-information/" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/umaborsi" target="_blank">X (Twitter)</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
