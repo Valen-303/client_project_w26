@@ -263,10 +263,6 @@ iframe {
   list-style: none;
 }
 
-.faq-accordion summary::-webkit-details-marker {
-  display: none;
-}
-
 .faq-accordion summary::before {
   content: "+ ";
   font-weight: bold;
@@ -413,7 +409,7 @@ iframe {
 .quick-link-btn:hover {
   background-color: #FFCB05;
   color: #00274C;
-  border-color: #FFCB05;
+  border-color: #D4A800;
 }
 
 .quick-link-btn:focus {
@@ -488,7 +484,7 @@ iframe {
 .back-to-top:hover {
   background-color: #FFCB05;
   color: #00274C;
-  border-color: #FFCB05;
+  border-color: #D4A800;
 }
 
 .back-to-top:focus {
